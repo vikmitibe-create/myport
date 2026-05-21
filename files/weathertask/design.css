@@ -1,0 +1,61 @@
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    width: 1000px;
+    height: 500px;
+    border: 1px rgb(58, 55, 55) solid;
+    border-radius: 15px;
+}
+
+.container h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.container input{
+    margin-left: 50px;
+    border-radius: 15px;
+    width: 320px;
+    height: 35px;
+}
+
+.container button{
+    background: rgb(36, 36, 229);
+    color: aliceblue;
+    height: 35px;
+    width: 120px;
+    border-radius: 15px;
+}
+
+.container button:hover{
+    transform: translateY(-2px);
+    background: rgb(99, 99, 220);
+}
+
+.weather{
+  display: flex;
+  gap: 20px;
+}
+
+.pic{
+    width: 300px;
+    height: 300px;
+}
+
+.weather p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}

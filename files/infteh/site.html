@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./site.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <!-- Есть  некоторые несоответствия требованиям:
+        1. Мне не очень нравятся гиперссылки, поэтому я оформил переходы
+        в виде кнопок (навигация полностью оформлена в классе navigation-case)
+        2. Переход на другие страницы html при помощи - это не практично, оформил через 
+        один файл, используя JavaScript
+        3. Шрифты текста на некоторых страницах выбраны не по требованию, т.к так красивее
+        4. Весь дизайн, анимация прописаны в файле site.css (Распределение дизайна в отдельный файл практичнее) 
+       -->
+</head>
+
+<body>
+    <header>
+        <!--<div class="logo">
+            <h2>T.E</h2>
+        </div>-->
+        <div class="navigation-case">
+            <div class="nav-sp">
+                <button onclick="showAbout()" class="nav-but">Обо мне</button>
+                <button onclick="showFamily()" class="nav-but">Моя семья</button>
+                <button onclick="showFriends()" class="nav-but">Друзья</button>
+                <button onclick="showHobbies()" class="nav-but">Мои увлечения</button>
+                <button onclick="leaveAll()" class="nav-but">Домашняя</button>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="container" id="headCase">
+            <div class="header-case">
+                <h2>Мой сайт</h2>
+            </div>
+        </div>
+
+
+        <div id="about" class="tab-content">
+            <h2>Обо мне</h2>
+            <div class="mebox">
+                <div class="metxt1">
+                    <p>Трифоненко Евгений Дмитриевич родился <br>
+                        4 декабря 2007 года. На данный момент - золотой медалист <br>
+                        Окончил Гарворд, Хогвартс и MIT.
+                    </p>
+                    <p>
+                        Выполнил все задания на 5 <br>
+                        с плюсом и выиграл Нарека в clash royale. Отличают <br>
+                        целеустремленность и желание добиваться поставленных целей. <br>
+                        Его энергия и находчивость настолько велики, что кажется, будто <br>
+                        у него в сутках не 24, а как минимум 48 часов.
+                    </p>
+                </div>
+                <div class="me-wrapper">
+                    <h3>ЭТО Я</h3>
+                    <img src="./image/me.png" alt="" class="me-img">
+                </div>
+            </div>
+        </div>
+
+        <div id="family" class="myfamily">
+            <h2>Моя семья</h2>
+            <div class="fambox">
+                <div class="famtxt">
+                    <p>В семье есть папа, мама и брат Никитка. <br>
+                        Папа у нас сильный и заботливый, он всегда помогает <br>
+                        и поддерживает в трудную минуту. Мама добрая и честная, <br>
+                        всегда задаст темп и поможет исполнить мечту!
+                    </p>
+                    <p>Никита - самый веселый член семьи. постоянно удивляюсь <br>
+                        Его бесконечной позитивной энергии. Перенял у меня все самые <br>
+                        важные навыки жизни - хитрость и находчивость.
+                    </p>
+                </div>
+                <div class="fam-wrapper">
+                    <div id="mothw" class="fam-thunder">
+                        <h3 id="mothtxt">МАМА</h3>
+                        <img src="./image/mom-img1.jpeg" alt="" class="fam-img">
+                    </div>
+                    <div id="fathw" class="fam-thunder">
+                        <h3 id="fathtxt">ПАПА</h3>
+                        <img src="./image/fahter-img2.jpeg" alt="" class="fam-img">
+                    </div>
+                    <div id="nikw" class="fam-thunder">
+                        <h3 id="niktxt">НИКИТА</h3>
+                        <img src="./image/nikit-img.jpeg" alt="" class="fam-img">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="friends" class="myfriends">
+            <h2>Друзья</h2>
+            <div class="friendbox">
+                <div class="friendtxt">
+                    <p>Мои друзья - это очень разносторонние люди, которые со мной <br>
+                        на протяжении всей жизни. Они каждый раз придумывают что-то новое. <br>
+                        Каждые выходные проходят, как каникулы.</p>
+                    <p>С ними всегда весело: мы шутим, гуляем и поддерживаем друг друга в трудную <br>
+                        в любых ситуауиях. Каждый из них по своему уникален, но вместе мы отличная <br>
+                        команда. Я ценю нашу дружбу и те моменты, которые мы проводим вмессте. </p>
+                </div>
+                <div class="fri-wrapper">
+                    <div class="frie-thunder">
+                        <img src="./image/friend-img1.jpeg" alt="" class="frie-img">
+                    </div>
+                    <div class="frie-thunder" class="frie-img">
+                        <img src="./image/fri-img3.jpeg" alt="">
+                    </div>
+                    <div class="frie-thunder" class="frie-img">
+                        <img src="./image/friend-img2.jpeg" alt="">
+                    </div>
+                    <div class="frie-thunder" class="frie-img">
+                        <img src="./image/friend-img4.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hobbies" class="myhobbies">
+            <h2>Мои увлечения</h2>
+            <div class="hobbbox">
+                <div class="hobbytxt">
+                    <p>Мои увлечения меняются на протяжении всей жизни. Я увлекался <br>
+                        рисованием, собирал головоломки на скорость, занимался разными видами <br>
+                        спорта: плаванием, борьбой и др. Но основное мое увлечение-верстка сайтов.</p>
+                    <p>На данный момент я увлекаюсь вресткой сайтов(frontend разработка, включающая <br>
+                        в себя реализацию элементов декора на странице сайта и их взаимодействие). <br>
+                        В процессе познания данного ремесла я изучил html и css, а также могу <br>
+                        обрабатывать минимальные события на языке "JavaScript". </p>
+                </div>
+                <div class="hobby-wrapper">
+                    <img src="./image/hobby-img.jpeg" alt="" class="hobimg">
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <script src="./lex.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="stars"></div>
+        <div class="aso">
+            <img src="./images/IMG_6036.JPG" alt="avo" class="avot">
+        </div>
+        <div class="card-txt">
+            <h3>Трифоненко Евгений Дмитриевич</h3>
+        </div>
+    </header>
+    <main>
+        <div class="cont">
+            <div class="lvl1">
+                <div class="info-about">
+                    <p><span class="intxt">Начинающий frontend-разработчик,</span> <br> владею несколькими языками <br>
+                        программирования: python, c++, javaScript, c#. <br>
+                        Так же верстаю сайты на базовом уровне.</p>
+                </div>
+                <div class="works-cont">
+                    <h2>Мои работы</h2>
+                    <div class="nav">
+                        <button onclick="menu.hidden^=1">Выбрать файлы:</button>
+                        <ul class="menu" id="menu" hidden>
+                            <li onclick="filterFiles('py')">python</li>
+                            <li onclick="filterFiles('cpp')">c++</li>
+                            <li onclick="filterFiles('cs')">c#</li>
+                            <li onclick="filterFiles('html')">html</li>
+                            <li onclick="filterFiles('all')">all</li>
+                        </ul>
+                    </div>
+                    <div class="work-box" id="wb">
+                        <div class="pb" data-type="html" active>
+                            <a class="file-link" href="files/examsite_08.04.2026"></a>
+                        </div>
+                        <div id="pb" class="pb" data-type="html">
+                            <a class="file-link" href="files/infteh"></a>
+                        </div>
+                        <div id="pb" class="pb" data-type="html">
+                            <a class="file-link" href="files/weathertask"></a>
+                        </div>
+                        <!--<div id="pb" class="pb" data-type="html">
+                    <a class="file-link"></a>
+                </div>
+                <div id="pb" class="pb" data-type="html">
+                    <a class="file-link"></a>
+                </div>
+                <div id="pb" class="pb" data-type="html">
+                    <a class="file-link"></a>
+                </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="py">
+                    <div class="pydi"></div>
+                    <h3>Python</h3>
+                    <p>75% владения</p>
+                </div>
+                <div class="cp">
+                    <div class="cpdi"></div>
+                    <h3>C++</h3>
+                    <p>40% владения</p>
+                </div>
+                <div class="csh">
+                    <div class="cshdi"></div>
+                    <h3>C#</h3>
+                    <p>60% владения</p>
+                </div>
+                <div class="htma">
+                    <div class="htmadi"></div>
+                    <h3>HTML+CSS</h3>
+                    <p>80% владения</p>
+                </div>
+                <div class="jc">
+                    <div class="jcdi"></div>
+                    <h3>javaScript</h3>
+                    <p>25% владения</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© Трифоненко Евгений 2026. Права защищены.</p>
+    </footer>
+    <script src="./scr.js"></script>
+</body>
+
+</html>
